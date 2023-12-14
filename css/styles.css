@@ -100,6 +100,14 @@ img {
 .middle:focus {
   color: #404bbf;
 }
+.middle-ris::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+}
 .contacts-ul {
   display: flex;
 
@@ -131,9 +139,15 @@ img {
 .hero {
   width: 1440px;
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-size: cover;
+
   padding: 188px 0;
-}
-.hero-container {
 }
 
 .hero-item {
@@ -184,7 +198,18 @@ img {
   justify-content: center;
 }
 .chek {
+  display: flex;
   width: 264px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 264px;
+}
+.chek-box {
+  padding: 24px 100px;
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
 .explanations {
   color: #434455;
@@ -226,6 +251,12 @@ img {
   margin-right: 0;
 }
 .name-prof {
+  display: flex;
+  width: 232px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   padding: 32px 0;
 }
 .name {
@@ -247,7 +278,33 @@ img {
   letter-spacing: 0.32px;
   text-align: center;
 }
-
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.socials-item {
+  width: 40px;
+  height: 40px;
+}
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  color: #f4f4fd;
+}
+.cosial {
+  fill: currentColor;
+}
+.socials-link-prof:hover,
+.socials-link-prof:focus {
+  background-color: #404bbf;
+}
 .second-title {
   font-family: inherit;
   color: #2e2f42;
@@ -326,6 +383,10 @@ img {
   text-transform: uppercase;
   text-decoration: none;
 }
+.foot-logo {
+  display: flex;
+  flex-direction: column;
+}
 
 .foot-text {
   max-width: 264px;
@@ -334,4 +395,26 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+}
+.foot-media {
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  padding-bottom: 16px;
+}
+.foot-box {
+  margin-left: 120px;
+}
+.foot-container {
+  display: flex;
+  margin-left: 156px;
+}
+.socials-foot {
+  gap: 16px;
+}
+.socials-link-icon:hover,
+.socials-link-icon:focus {
+  background-color: #31d0aa;
 }
