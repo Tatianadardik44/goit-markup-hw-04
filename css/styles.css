@@ -118,6 +118,7 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: #404bbf;
+  margin-bottom: -1px;
 }
 .contacts-ul {
   display: flex;
@@ -370,6 +371,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  padding: 40px 32px;
   position: absolute;
   top: 0;
   left: 0;
