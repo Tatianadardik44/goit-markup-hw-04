@@ -107,6 +107,7 @@ img {
 .middle.middle-ris {
   position: relative;
   color: #404bbf;
+  bottom: -1px;
 }
 .middle-ris::after {
   content: '';
@@ -360,21 +361,24 @@ img {
   position: relative;
   overflow: hidden;
 }
-.overlay {
-  position: absolute;
+.overlay-text {
+  color: #f4f4fd;
+
   font-family: inherit;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  background-color: #4d5ae5;
-  padding: 40px 32px 164px 32px;
-  color: #f4f4fd;
+}
+.overlay {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: #4d5ae5;
+  padding: 40px 32px 164px 32px;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -386,7 +390,6 @@ img {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-
 .service {
   font-family: inherit;
   color: #2e2f42;
@@ -397,7 +400,7 @@ img {
   letter-spacing: 0.4px;
   margin-bottom: 8px;
 }
-.short-description {
+.short-dascription {
   font-family: inherit;
   color: inherit;
   font-size: 16px;
@@ -439,6 +442,7 @@ img {
 .foot-logo {
   display: flex;
   flex-direction: column;
+  margin-right: 120px;
 }
 
 .foot-text {
@@ -459,13 +463,10 @@ img {
   font-weight: 500;
   margin-bottom: 16px;
 }
-.foot-box {
-  margin-left: 120px;
-}
+
 .foot-container {
   display: flex;
   align-items: baseline;
-  margin-right: 120px;
 }
 .socials-foot {
   gap: 16px;
